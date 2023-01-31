@@ -9,7 +9,9 @@ It has a prime focus on being extendable, without restrictions. It is an ecosyst
 
 The connector architecture is designed with streaming data pipelines in mind. Here, the user configures their personal pipeline, from start to finish with pre-existing processors (parts of the pipeline). The power of the connector architecture is its extendability, this makes it possible to mix and match processors written in different programming languages.
 
-Here is a small example of a pseudo pipeline made with the connector architecture. Here one processor ("source_processor") sends some data to the other processor ("sink_processor"). A good example is a data ingestion pipeline. The source fetches data with a custom script from some API, because this is a custom script, it is written in javascript. The sink takes this data and stores it inside a specific database for later reuse.
+## Small high level example
+
+In this pseudo pipeline made with the connector architecture, one processor ("source_processor") sends some data to the other processor ("sink_processor"). A good example is a data ingestion pipeline. The source fetches data with a custom script from some API, because this is a custom script, it is written in javascript. The sink takes this data and stores it inside a specific database for later reuse.
 
 The connector architecture makes the pipeline possible, by adding, `runners`. A runner takes in the pipeline configuration, which is runner agnostic and starts the corresponding processors. Runners are created once and reused over all pipelines, while processors can be more easily made per pipeline if this is desired.
 
