@@ -52,8 +52,14 @@ Each channel has it's own configuration (separate for readers and writers) that 
 
 ## Connector
 
+A connector is a piece of code that communicates with a channel for a specific runner.
+
 
 ## Pipeline
+
+A pipeline is the total picture, the total data transformation happening. It can consist of multiple steps that link together. It does not have to be an easy left-to-right flow. Cycles and aggregations and everything in between are also supported.
+
+The pipeline is configured in linked data and is constrained by all definitions of the used runners, processors, and channels.
 
 
 ## Runner
