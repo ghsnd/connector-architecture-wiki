@@ -9,6 +9,7 @@ Here you can see an example configuration of a HTTP channel configuration. It de
 ```turtle
 @prefix : <https://w3id.org/conn#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 :HttpChannel a :Channel;
     :reader :HttpReaderChannel;
