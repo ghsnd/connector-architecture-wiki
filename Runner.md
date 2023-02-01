@@ -15,11 +15,12 @@ Here is the corresponding config for the jsProcessor.
 @prefix fno: <https://w3id.org/function/ontology#> .
 @prefix fnom: <https://w3id.org/function/vocabulary/mapping#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix : <https://w3id.org/conn#> .
-@prefix ws: <https://w3id.org/conn/ws#> .
+
 
 js:JsProcess a :ProcessClass;
-    :supportsChannel ws:WSChannel, js:JsChannel. # and more
+    :supportsChannel :WSChannel, js:JsChannel. # and more
 
 js:JsProcessorShape a sh:NodeShape;      # Shacl shape for validation
   sh:targetClass js:JsProcess;
