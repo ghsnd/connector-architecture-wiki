@@ -2,6 +2,9 @@ In the connector architecture, the runner is probably the most important part. T
 
 Each runner has an associated processor type, which can be instantiated by processor configs. This associated processor type can specify domain-specific requirements to which the processor config has to conform. These can be seen as required fields. These associated processor types also specify what channels they support (or that the runner supports when starting these processors).
 
+To promote reuse and create an ecosystem of processors, it is expected that the runner tries to do a lot of heavy lifting and makes it easy to create processors that are run with that runner. For example, the js-runner starts up the channels before actually executing the function, this way, one processor is as easy as a single function. It also does not slouch on performance by supporting javascript specific in-memory channels.
+
+
 ## Example js-runner
 
 Let's take a look at one of the first runners to exist, the javascript runner.
@@ -20,7 +23,7 @@ Here is the corresponding config for the jsProcessor.
 
 
 js:JsProcess a :ProcessClass;
-    :supportsChannel :WSChannel, js:JsChannel. # and more
+    :supportsChannel :HttpChannel, js:JsChannel. # and more
 
 js:JsProcessorShape a sh:NodeShape;      # Shacl shape for validation
   sh:targetClass js:JsProcess;
