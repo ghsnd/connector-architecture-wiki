@@ -30,4 +30,4 @@ flowchart LR
     w--channel-->r
 ```
 
-For more information you can check out the rest of the wiki, the [vocabulary](https://github.com/TREEcg/connector-architecture/wiki/What-is-what%3F-Vocabulary-explained) page is a good starting place.
+For more information you can check out the rest of the wiki, the [vocabulary](https://github.com/TREEcg/connector-architecture/wiki/Vocabulary-explained) page is a good starting place.
