@@ -29,7 +29,7 @@ js:JsProcessorShape a sh:NodeShape;      # Shacl shape for validation
     sh:path js:file;
     sh:name "Path to main main entry point"
   ], [
-    sh:dataType xsd:iri; #  Not correct
+    sh:dataType xsd:iri;
     sh:path js:location;
     sh:name "Location to root of JS program"
   ], [
