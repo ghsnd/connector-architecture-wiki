@@ -29,10 +29,10 @@ Here you can see an example configuration of a HTTP channel configuration. It de
     sh:property [
       sh:datatype xsd:string;
       sh:path :HttpMethod;
-      sh:name "The method to use for the HTTP action"
+      sh:description "The method to use for the HTTP action"
     ], [
       sh:datatype xsd:string;
       sh:path :HttpEndpoint;
-      sh:name "The endpoint to use for the HTTP action"
+      sh:description "The endpoint to use for the HTTP action"
     ].
 ```
