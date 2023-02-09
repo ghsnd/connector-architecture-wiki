@@ -18,7 +18,7 @@ Here you can see an example configuration of a HTTP channel configuration. It de
 :HttpReaderChannelShape a sh:NodeShape;
     sh:targetClass :HttpReaderChannel;
     sh:property [
-      sh:datatype xsd:number;
+      sh:datatype xsd:integer;
       sh:path :HttpPort;
       sh:name "The port to bind the HTTP server to"
     ].
