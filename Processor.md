@@ -4,7 +4,7 @@ A processor is only useful in a pipeline when it is accompanied by its high leve
 
 ## Example js-processor
 
-Here a js-processor is defined, based on the js-runner example here. The configuration is quite easy to follow, there is a processor called `js:Print` that is a `js:JsProcess` and requires one argument, the message to print.
+Here a js-processor is defined, based on the js-runner example [here](https://github.com/TREEcg/connector-architecture/wiki/Runner). The configuration is quite easy to follow, there is a processor called `js:Print` that is a `js:JsProcess` and requires one argument, the message to print.
 
 ```turtle
 @prefix js: <https://w3id.org/conn/js#> .
