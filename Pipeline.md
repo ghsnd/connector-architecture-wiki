@@ -24,7 +24,7 @@ js:Send a js:JsProcess;
   ].
 ```
 
-**Echo**: A js process that echo's all messages from a reader to a writer
+**Echo**: A js process that echoes all messages from a reader to a writer
 ```turtle
 js:Echo a js:JsProcess;
   js:file "./echo.js";
